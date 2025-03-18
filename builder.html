@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Builder</title>
+    <link rel="stylesheet" href="./styles2.css" />
+  </head>
+  <body>
+    <h1>Create or Edit Survey</h1>
+    <form id="surveyForm">
+      <label for="surveyName">Survey Name:</label>
+      <input type="text" id="surveyName" name="surveyName" required /><br />
+
+      <label for="surveyDescription">Description:</label>
+      <textarea
+        id="surveyDescription"
+        name="surveyDescription"
+        required></textarea
+      ><br />
+
+      <div id="questions"></div>
+      <button type="button" onclick="addQuestion()">Add Question</button><br />
+      <button type="submit">Save Survey</button>
+    </form>
+    <script src="./builder.js"></script>
+  </body>
+</html>

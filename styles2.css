@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #4a90e2;
+}
+
+/* Buttons */
+button {
+  display: block;
+  margin: 30px auto;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button:active {
+  background-color: #285e8e;
+}
+
+/* Questionnaire Catalog Styles */
+#catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #4a90e2;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+
+/* Questionnaire Run Page Styles */
+#statisticsContainer {
+  background: #eef2f6;
+  border: 1px solid #dae0e5;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+#statisticsContainer h2 {
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+#statisticsContainer p,
+#statisticsContainer ul {
+  font-size: 1rem;
+  color: #555;
+}
+
+#statisticsContainer ul {
+  padding-left: 20px;
+}
+
+#questionnaireContainer {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+#questionnaireContainer form {
+  margin-top: 20px;
+}
+
+/* Survey Builder Page Styles */
+form {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+.question {
+  background: #f9fafb;
+  border: 1px solid #e3e3e3;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+button[type="button"],
+button[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+}
+
+button.add-option {
+  background-color: #f0ad4e;
+  color: white;
+  font-size: 0.9rem;
+}
+
+button.add-option:hover {
+  background-color: #ec971f;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #catalog {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* General Form Styles */
+/* General Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"] {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.options {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.radio-option,
+.checkbox-option {
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
